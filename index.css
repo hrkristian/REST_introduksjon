@@ -1,0 +1,22 @@
+
+
+#btnCard {
+  display: block;
+  margin: auto;
+}
+main {
+  border: 1px solid black;
+}
+h1 {margin: 0;}
+header {
+  padding: 20px;
+  text-align: center;
+  background-color: #aaa;
+  border-bottom: 2px solid black;
+}
+body {
+  margin: 0;
+}
+* {
+  border: 1px solid red;
+}
