@@ -11,3 +11,12 @@ function logToElement(element, text) {
 
   element.innerHTML = text;
 }
+
+function logToFooter(text) {
+  var footer = document.getElementById("errorFooter");
+  footer.innerHTML += text+"<br>"+footer.innerHTML;
+}
+function clearFooter() {
+  var footer = document.getElementById("errorFooter");
+  footer.innerHTML = "";
+}

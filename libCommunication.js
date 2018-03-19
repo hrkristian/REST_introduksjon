@@ -11,9 +11,9 @@ function communicator(request, responseHandler) {
 
   var comm = new XMLHttpRequest();
 
-  comm.onreadystatechange = responseHandler;
   comm.open("POST", "requestHandler.php", true);
-  comm.setRequestHeader("Content-type", "text/plain");
+  comm.onreadystatechange = responseHandler;
+  comm.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
   comm.send(request);
 }

@@ -15,11 +15,14 @@
       <h1>REST Demo</h1>
     </header>
     <main>
-      <button type="button" name="button" id="btnCard" onclick="getCardInfo(cardContainer)">Click me!</button>
+      <button type="button" name="button" id="btnCard" onclick="postRequest(cardContainer)">Click me!</button>
       <div id="cardContainer">
 
       </div>
     </main>
-
+    <footer>
+      <p id="errorFooter"></p>
+    </footer>
+    <button type="button" name="button" id="btnClearFooter" onclick=clearFooter()>Clear</button>
   </body>
 </html>
